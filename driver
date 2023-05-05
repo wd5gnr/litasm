@@ -1,0 +1,5 @@
+#!/bin/bash
+PGM=$1
+shift
+g++ -o "$PGM" "$PGM.cpp" litasm.cpp
+"./$PGM" "$@"
